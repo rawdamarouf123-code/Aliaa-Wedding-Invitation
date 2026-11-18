@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>كرت دعوة زفاف سعدالدين و علياء</title>
+<meta name="description" content="يسعدنا دعوتكم لمشاركة علياء وسعد الدين فرحتهما يوم السبت ٢١ نوفمبر ٢٠٢٦.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="كرت دعوة زفاف سعدالدين و علياء">
+<meta property="og:description" content="افتح كرت الدعوة وشاركونا فرحتنا يوم السبت ٢١ نوفمبر ٢٠٢٦  .">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+<section class="welcome-screen" id="welcomeScreen">
+  <div class="welcome-card">
+    <div class="envelope"><div class="envelope-letter">♡</div><div class="envelope-flap"></div><div class="envelope-front"></div></div>
+    <p class="welcome-small">دعوة خاصة</p>
+    <h1>فرحة جميلة تجمعنا</h1>
+    <h2> <span>♡</span> سعد الدين و علياء </h2>
+    <p class="welcome-text">يسعدنا مشاركتكم أجمل لحظات فرحتنا</p>
+    <button class="open-button" id="openInvitation">افتح كرت الدعوة</button>
+  </div>
+</section>
+
+<div class="sound-controls">
+  <button class="sound-button" id="nasheedButton" type="button" title="تشغيل الأنشودة" aria-label="تشغيل الأنشودة">♫</button>
+  <button class="sound-button zaghroota-button" id="zaghrootaButton" type="button" title="زغرودة للعروسة" aria-label="تشغيل الزغرودة">❀</button>
+</div>
+<audio id="nasheed" src="audio/bashraki.mp3" preload="none"></audio>
+<audio id="zaghroota" src="audio/zaghroota.mp3" preload="none"></audio>
+
+<main id="mainContent" class="page-content" hidden>
+<header class="hero"><div class="hero-inner">
+  <p class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيم</p>
+  <div class="tiny-flower">❀</div><p class="eyebrow">بكل الحب والفرحة</p>
+  <h1>دعوة لحضور حفل زفاف</h1>
+  <div class="names"><span>سعدالدين</span><i>&</i><span>علياء </span></div>
+  <p class="date-line">السبت ٢١ نوفمبر ٢٠٢٦</p>
+  <p class="intro">يسعدنا أن تشاركونا أجمل أيام العمر، وتكونوا جزءًا من فرحتنا.</p>
+</div></header>
+
+<section class="section verse-section">
+  <p class="verse">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا ﴾</p>
+  <p class="verse-ref">سورة الروم – الآية ٢١</p>
+</section>
+
+<section class="section countdown-section">
+<p class="section-kicker">اقترب اليوم المنتظر</p><h2>باقي على فرحتنا </h2>
+<div class="countdown">
+<div><strong id="days">--</strong><span>يوم</span></div><div><strong id="hours">--</strong><span>ساعة</span></div>
+<div><strong id="minutes">--</strong><span>دقيقة</span></div><div><strong id="seconds">--</strong><span>ثانية</span></div>
+</div><p id="countdownMessage" class="countdown-message"></p>
+</section>
+
+<section class="section details-section">
+<p class="section-kicker">يسعدنا وجودكم</p><h2>تفاصيل يومنا الجميل</h2>
+<div class="details-card">
+<div class="detail-row"><span class="detail-icon">♡</span><div><small>العروسان</small><strong>سعد الدين & علياء </strong></div></div>
+<div class="detail-row"><span class="detail-icon">▦</span><div><small>التاريخ</small><strong>   السبت ٢١ نوفمبر ٢٠٢٦</strong></div></div>
+<div class="detail-row"><span class="detail-icon">◷</span><div><small>الساعة</small><strong id="eventTime">الساعة السابعة مساءً   </strong></div></div>
+<div class="detail-row"><span class="detail-icon">⌖</span><div><small>القاعة</small><strong id="venueName">  قاعة بنت السلطان </strong></div></div>
+<a class="map-button disabled" id="mapLink" href="#" target="_blank" rel="noopener">افتح موقع القاعة على الخريطة</a>
+</div></section>
+<section class="section music-section">
+    <p class="section-kicker">أنشودة للعروس</p><h2>بشراكِ اليوم يا عمري</h2>
+    <p>فالآن تحقق ما رمنا ♡</p>
+    <p class="audio-hint"> الزر الموجود على جانب الصفحة يشغّل الأنشودة أو يوقفها.</p>
+    </section>
+    
+    <section class="section guestbook-section">
+    <p class="section-kicker">كلمات تفضل في الذاكرة</p><h2>سيبوا للعروسان رسالة حب</h2>
+    <p class="guestbook-intro">اكتبوا للعروسان كلمة حلوة أو دعوة من القلب، وخلوها ذكرى جميلة في يومهم.</p>
+    <form id="wishForm" class="wish-form">
+    <label for="guestName">اسمك</label><input id="guestName" type="text" maxlength="40" placeholder="اكتبي اسمك" required>
+    <label for="wishText">رسالتك لعلياء</label><textarea id="wishText" rows="4" maxlength="500" placeholder="اكتبي تهنئتك أو دعاءك هنا..." required></textarea>
+    <button class="submit-button" type="submit">إضافة التهنئة ♡</button>
+    </form>
+    <p class="storage-note"></p>.</p>
+    <div id="wishesList" class="wishes-list" aria-live="polite"></div>
+    </section>
+    </main>
+    
+    <footer><p>اللهم بارك لهما وبارك عليهما واجمع بينهما في خير</p><span>صُنعت بكل الحب لعلياء ♡</span></footer>
+    <script src="script.js"></script>
+    </body></html>
